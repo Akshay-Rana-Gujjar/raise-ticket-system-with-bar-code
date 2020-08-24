@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AppBarMain from './component/AppBarMain';
+import { Typography, Box } from '@material-ui/core';
+import TicketRaise from './component/TicketRaise';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppBarMain />
+      <Box m={2}>
+        <Typography variant="h5" gutterBottom>
+          Please choose or describe your Issue below.
+        </Typography>
+        
+        <TicketRaise />
+      </Box>
+
+
+
+
     </div>
   );
 }
