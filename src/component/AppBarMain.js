@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import { AppBar, Toolbar, IconButton, makeStyles, Typography, Button } from "@material-ui/core";
-import { grey } from "@material-ui/core/colors";
 import { Menu as MenuIcon} from "@material-ui/icons";
 import AppDrawer from './AppDrawer';
 
@@ -16,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     colorDefault :{
-      background :grey[50],
+      background :"#ffffff",
       
     }
   }));
